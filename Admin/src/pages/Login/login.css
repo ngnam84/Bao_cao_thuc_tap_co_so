@@ -1,0 +1,175 @@
+.imageBackground {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  padding: 20px;
+}
+
+#formContainer {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+}
+
+#form-Login {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.formContentLeft {
+  flex: 1;
+  position: relative;
+  background: #f8f9fa;
+}
+
+.formImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.formImg:hover {
+  transform: scale(1.05);
+}
+
+.loginform {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.form-header .divider {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0 16px;
+}
+
+.form-header .text {
+  font-size: 15px;
+  color: #666;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.button {
+  height: 48px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  background: linear-gradient(45deg, #1890ff, #40a9ff) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(24, 144, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(24, 144, 255, 0.3) !important;
+}
+
+.forgot-password-link {
+  color: #1890ff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin: 16px 0;
+  display: inline-block;
+}
+
+.forgot-password-link:hover {
+  color: #40a9ff;
+  text-decoration: underline;
+}
+
+.register-section {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.register-section .ant-divider {
+  color: #666;
+  font-size: 14px;
+}
+
+.register-section .ant-btn-link {
+  font-size: 15px;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  #formContainer {
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .loginform {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #formContainer {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #form-Login {
+    flex-direction: column;
+  }
+
+  .formContentLeft {
+    height: 240px;
+  }
+
+  .loginform {
+    padding: 30px 20px;
+  }
+  
+  .form-header {
+    margin-bottom: 30px;
+  }
+  
+  .form-header h2 {
+    font-size: 28px;
+  }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: darkgreen;
+  border-color:   darkgreen;
+}
+
+.image{
+  width: 120px;
+  height: 100px;
+}
+
+.text{
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
