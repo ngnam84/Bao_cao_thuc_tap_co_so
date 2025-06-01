@@ -1,0 +1,45 @@
+.groupButton {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS cho các nút trong trang ProductList */
+.ant-btn {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border-color: #27ae60;
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ant-btn:hover, .ant-btn:focus {
+    background: linear-gradient(to right, #27ae60, #219653);
+    border-color: #219653;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+}
+
+/* Hiệu ứng shine cho các nút */
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Class custom-button để áp dụng cho các nút cần style đặc biệt */
+.custom-button {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border-color: #27ae60;
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+    transition: all 0.3s ease;
+}

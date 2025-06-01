@@ -1,0 +1,191 @@
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+/* Styling cho các button trong Dashboard */
+.card_total .ant-btn-primary {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border-color: #27ae60;
+    box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+    transition: all 0.3s ease;
+    height: 36px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_total .ant-btn-primary:hover,
+.card_total .ant-btn-primary:focus {
+    background: linear-gradient(to right, #27ae60, #219653);
+    border-color: #219653;
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Hiệu ứng shine cho các nút */
+.card_total .ant-btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shine 2s infinite;
+}
+
+/* Hiệu ứng cho các biểu tượng */
+.card_number .anticon {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(46, 204, 113, 0.1);
+    color: #27ae60;
+}
+
+.card_total:hover .anticon {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(46, 204, 113, 0.2);
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.card_total{
+    box-shadow: 0 0 15px 0 rgba(46, 204, 113, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s ease;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(46, 204, 113, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card_total::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, transparent 70%, rgba(46, 204, 113, 0.1) 100%);
+    border-radius: 0 0 0 100px;
+}
+
+.card_total:hover {
+    box-shadow: 0 5px 20px 0 rgba(46, 204, 113, 0.15);
+    transform: translateY(-3px);
+}
+
+.card_number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(46, 204, 113, 0.1);
+    margin-bottom: 15px;
+}
+
+.number_total{
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title_total{
+    color: #7f8c8d;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.chart{
+    margin-top: 30px;
+}
+
+/* Styling cho danh sách trong card */
+.card_total ul {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.card_total ul li {
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card_total h3 {
+    color: #27ae60;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* Styling cho breadcrumb */
+.ant-breadcrumb {
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: rgba(46, 204, 113, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(46, 204, 113, 0.1);
+}
+
+.ant-breadcrumb a {
+    color: #27ae60;
+    transition: all 0.3s ease;
+}
+
+.ant-breadcrumb a:hover {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    
+    .card_total {
+        padding: 15px;
+    }
+    
+    .number_total {
+        font-size: 22px;
+    }
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
